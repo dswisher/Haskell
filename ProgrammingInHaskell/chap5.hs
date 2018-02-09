@@ -75,3 +75,14 @@ crack xs = encode (-factor) xs
 lcsums :: Int -> Int
 lcsums n = sum [x^2 | x <- [1..n]]
 
+-- 5.2
+grid :: Int -> Int -> [(Int, Int)]
+grid m n = [(x, y) | x <- [0..m], y <- [0..n]]
+
+-- 5.3
+-- TODO
+
+-- 5.4
+replicate' :: Int -> a -> [a]
+replicate' n a = [a | _ <- [1..n]]
+
