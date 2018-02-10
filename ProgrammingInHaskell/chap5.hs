@@ -86,3 +86,10 @@ grid m n = [(x, y) | x <- [0..m], y <- [0..n]]
 replicate' :: Int -> a -> [a]
 replicate' n a = [a | _ <- [1..n]]
 
+-- 5.5
+-- TODO
+
+-- 5.6
+perfects :: Int -> [Int]
+perfects n = [x | x <- [1..n], sum (factors x) == 2 * x]
+
