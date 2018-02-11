@@ -87,7 +87,8 @@ replicate' :: Int -> a -> [a]
 replicate' n a = [a | _ <- [1..n]]
 
 -- 5.5
--- TODO
+pyths :: Int -> [(Int, Int, Int)]
+pyths n = [(x,y,z) | x <- [1..n], y <- [1..n], z <- [1..n], x^2 + y^2 == z^2]
 
 -- 5.6
 perfects :: Int -> [Int]
